@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+/* Background Image with Blur Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/QR.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Centered Card-like container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside */
+    justify-content: center;
+}
+
+/* Stylish input box */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #764ba2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Modern button style */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* QR Code Box */
+
+/* QR Code Container: Adds spacing between Generate button and QR code */
+#qrcode-container {
+    margin-top: 20px; /* Adjust this value to move it further down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+/* Dark Mode: Container */
+.dark-mode .container {
+    background: rgba(250, 249, 247, 0.1);
+    color: rgb(250, 250, 250);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode: Input Fields */
+.dark-mode input {
+    background: rgba(156, 142, 142, 0.2);
+    color: white;
+    border-color: white;
+}
+
+/* Dark Mode: Buttons */
+.dark-mode button {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/* Button Hover Effect */
+#theme-toggle:hover {
+    background: #ff416c;
+}
+
+/* Dark Mode: Toggle Button (Adjusts Color in Dark Mode) */
+.dark-mode #theme-toggle {
+    background: white;
+    color: black;
+}
+
+#downloadBtn {
+    display: block;
+    margin: 20px auto; /* Adds space below QR Code */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #dfeaf5; /* Light blue shade */
+    color: #333; /* Dark text for contrast */
+    border: none;
+    border-radius: 20px; /* Fully rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#downloadBtn:hover {
+    background-color: #bcd3ec; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight hover effect */
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="websiteInput" placeholder="Enter website name or URL">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        
+        <div id="qrcode-container">
+            <div id="qrcode"></div>
+            <button id="downloadBtn" onclick="downloadQRCode()" style="display:none;">Download QR</button>
+        </div>
+        <div id="qrcode-box">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
