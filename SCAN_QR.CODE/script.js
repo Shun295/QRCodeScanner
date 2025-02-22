@@ -5,7 +5,7 @@ document.getElementById('theme-toggle').addEventListener('click', function () {
 });
 
 async function checkURLSafety(url) {
-    const apiKey = "AIzaSyA3IS0dTJBPiUIkpi41WHzgqX-ipPwijig"; // Replace with your API key
+    const apiKey = "YOUR_API_KEY"; // Replace with your API key
     const apiUrl = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${apiKey}`;
 
     const requestBody = {
