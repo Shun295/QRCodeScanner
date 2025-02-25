@@ -17,8 +17,12 @@ Usage:
 Open the app in your browser.
 
 Enter the website name or URL in the input field (e.g., youtube or https://www.example.com).
+
 Click the "Generate QR Code" button.
+
 If the URL is safe, a QR code will be generated.
+
 You can download the QR code by clicking the "Download QR" button.
+
 You can also toggle between dark and light modes using the "🌙 Dark Mode" button.
 
